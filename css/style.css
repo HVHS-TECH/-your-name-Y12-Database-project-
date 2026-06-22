@@ -25,13 +25,31 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #ff80e4;
-  color: #fff;
+  background-color: #e6e6e6;
+  color: #000000;
   transition: background-color 0.3s;
   width: 220px; /* Set a fixed width */
   text-align: center;
 }
 
 button:hover {
-  background-color: #bd31b1;
+  background-color: #e4e4e4;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #526663;
+  border-radius: 6px;
+}
+
+#statusMessage {
+  margin-top: 1rem;
+  font-style: italic;
 }
