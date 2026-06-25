@@ -15,9 +15,7 @@ function endGame(_player, _obstacle){
     screenSelector = "end";
     player.remove();
     obstacles.removeAll();
-    firebase.database().ref('/users/' + GLOBAL_user.uid).once({score})
-
-
+    firebase.database().ref('/users/' + GLOBAL_user.uid).once()
 }
 
 
