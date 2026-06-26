@@ -15,12 +15,14 @@ function endGame(_player, _obstacle){
     screenSelector = "end";
     player.remove();
     obstacles.removeAll();
-    firebase.database().ref('/users/' + GLOBAL_user.uid).once()
+    firebase.database().ref('/users/' + GLOBAL_user.uid + "/GDScore").update({
+        score
+    })
 }
 
 
 
-const SCREEN_WIDTH = 400;
+const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 200;
 const PLAYER_HEIGHT = 25;
 const PLAYER_WIDTH = 25;
